@@ -1,3 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+// Primary
+$cyan: hsl(179, 62%, 43%, 100%);
+$lightCyan: hsl(179, 47%, 52%, 100%);
+$BrightYellow: hsl(71, 73%, 54%, 100%);
+
+// Neutral
+$lightGray: hsl(204, 43%, 93%, 100%);
+$grayishBlue: hsl(218, 22%, 67%, 100%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
-  background-color: red;
+  font: {
+    family: "Karla", sans-serif;
+    size: 16px;
+  }
+}
+
+.content {
+  align-items: center;
+  background-color: $lightGray;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  max-width: 1440px;
+  width: 100vw;
+
+  .cards {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px hsl(217, 22, 67, 50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "cards-text cards-text"
+    "card-1 card-2";
+    height: 475px;
+    width: 635px;
+
+    .cards-text {
+      padding: 50px;
+      grid-area: cards-text;
+
+      .title {
+        font-size: 23px;
+        color: $cyan;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+      }
+
+      .text {
+        color: $BrightYellow;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+      }
+
+      .text-2 {
+        color: $grayishBlue;
+      }
+    }
+
+    .card-1 {
+      background-color: $cyan;
+      // height: 50%;
+      // width: 50%;
+      grid-area: card-1;
+    }
+
+    .card-2 {
+      background-color: $lightCyan;
+      // height: 50%;
+      // width: 50%;
+      grid-area: card-2;
+    }
+  }
 }
