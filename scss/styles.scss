@@ -114,6 +114,12 @@ html {
         align-self: center;
         height: 48px;
         width: 237px;
+        cursor: pointer;
+        outline: none;
+
+        &:active {
+          transform: scale(1.1);
+        }
       }
     }
 
