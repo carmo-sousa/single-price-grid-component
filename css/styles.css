@@ -92,6 +92,11 @@ html {
   align-self: center;
   height: 48px;
   width: 237px;
+  cursor: pointer;
+  outline: none;
+}
+.content .cards .card-1 .button:active {
+  transform: scale(1.1);
 }
 .content .cards .card-2 {
   background-color: #4bbebc;
