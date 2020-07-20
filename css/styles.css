@@ -29,10 +29,12 @@ html {
   grid-template-areas: "cards-text cards-text" "card-1 card-2";
   height: 475px;
   width: 635px;
+  overflow: hidden;
 }
 .content .cards .cards-text {
-  padding: 50px;
+  padding: 30px;
   grid-area: cards-text;
+  overflow: hidden;
 }
 .content .cards .cards-text .title {
   font-size: 23px;
@@ -52,8 +54,56 @@ html {
 .content .cards .card-1 {
   background-color: #2ab2af;
   grid-area: card-1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.content .cards .card-1 .card-1-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.content .cards .card-1 .card-1-text {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.content .cards .card-1 .card-1-text span {
+  font-size: 30px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+.content .cards .card-1 .card-1-text-2 {
+  color: #ffffff;
+  font-weight: 700;
+}
+.content .cards .card-1 .button {
+  color: #e5eff5;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  background-color: #c0df34;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  align-self: center;
+  height: 48px;
+  width: 237px;
 }
 .content .cards .card-2 {
   background-color: #4bbebc;
   grid-area: card-2;
+  padding: 30px;
+}
+.content .cards .card-2 .card-2-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #e5eff5;
+  margin-bottom: 20px;
+}
+.content .cards .card-2 .card-2-text {
+  color: #e5eff5;
 }

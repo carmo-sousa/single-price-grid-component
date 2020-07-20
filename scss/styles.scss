@@ -39,14 +39,16 @@ html {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
-    "cards-text cards-text"
-    "card-1 card-2";
+      "cards-text cards-text"
+      "card-1 card-2";
     height: 475px;
     width: 635px;
+    overflow: hidden;
 
     .cards-text {
-      padding: 50px;
+      padding: 30px;
       grid-area: cards-text;
+      overflow: hidden;
 
       .title {
         font-size: 23px;
@@ -69,16 +71,67 @@ html {
 
     .card-1 {
       background-color: $cyan;
-      // height: 50%;
-      // width: 50%;
       grid-area: card-1;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+
+      .card-1-title {
+        font-size: 18px;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 20px;
+      }
+
+      .card-1-text {
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        span {
+          font-size: 30px;
+          font-weight: 700;
+          margin-right: 10px;
+        }
+      }
+
+      .card-1-text-2 {
+        color: #ffffff;
+        font-weight: 700;
+      }
+
+      .button {
+        color: #e5eff5;
+        font-weight: 700;
+        font-size: 16px;
+        font-family: "Karla", sans-serif;
+        background-color: $BrightYellow;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+        margin-top: 30px;
+        align-self: center;
+        height: 48px;
+        width: 237px;
+      }
     }
 
     .card-2 {
       background-color: $lightCyan;
-      // height: 50%;
-      // width: 50%;
       grid-area: card-2;
+      padding: 30px;
+
+      .card-2-title {
+        font-size: 18px;
+        font-weight: 700;
+        color: #e5eff5;
+        margin-bottom: 20px;
+      }
+
+      .card-2-text {
+        color: #e5eff5;
+      }
     }
   }
 }
