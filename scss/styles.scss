@@ -15,11 +15,13 @@ $grayishBlue: hsl(218, 22%, 67%, 100%);
   box-sizing: border-box;
 }
 
-html {
+html, body {
   font: {
     family: "Karla", sans-serif;
     size: 16px;
   }
+
+  height: 100%;
 }
 
 .content {
