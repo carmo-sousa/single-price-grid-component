@@ -112,3 +112,18 @@ html {
 .content .cards .card-2 .card-2-text {
   color: #e5eff5;
 }
+
+@media (max-width: 1000px) {
+  .content {
+    padding: 50px 0px;
+    height: 100%;
+  }
+  .content .cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "cards-text" "card-1" "card-2";
+    height: 100%;
+    width: 80%;
+    overflow: hidden;
+  }
+}
